@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+	
+<html lang="es">
+	
+<head>
+<title>Titulo de la web</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="/css/style.css" />
+<script type="text/javascript" src="codigo.js"></script>
+</head>
+	
+<body>			<header>
+					<a id="glud" href="http://glud.org/">GLUD</a>
+						<img src="logo.jpg" id="logo">	
+				</header>
+				<section id="p1">
+					<h3>Es lo mismo la web que internet</h3>
+					<form action="2pregunta.html" method="get">
+						<input type="radio" name="web"  value="si">si
+						<br/>
+						<input type="radio" name="web"  value="correcto"> no
+						<br/>
+						<br/>
+						<input type="button" id="r1" onclick="corroborar('0')" name="respuesta" value="Responder">
+						<input disabled id="cont"  type="submit"  value="Siguiente">
+					</form>
+				</section>
+				<section style='display:none;' id="p2">
+			<form action="http://www.gludwebcommunity.me/" method="get">
+				<h3>Que entiende por html</h3>
+				<input type="radio" name="web" value="Hyper Text Mask Language" > Hyper Text Mask Language
+				<br/>
+				<input type="radio" name="web" value="Hard Text Markup Language">  Hard Text Markup Language
+				<br/>
+				<input type="radio" name="web" value="correcto"> Hyper Text Markup Language
+				<br/>
+				<input type="button" id="r2" onclick="corroborar('1')" name="respuesta" value="Responder">
+			</form>
+		</section>
+		<section style='display:none;' id="p3">
+			<form action="http://www.gludwebcommunity.me/" method="get">
+				<h3>¿Cuál es la forma correcta de insertar un comentario? </h3>
+				<input type="radio" name="web" value="correcto" >  &lt;!--...--&gt;
+				<br/>
+				<input type="radio" name="web" value="<¡--...--!>">  &lt;¡--...--!&gt;
+				<br/>
+				<input type="radio" name="web" value="incorrecto"> &lt;coment&gt;	
+				<br/>
+				<input type="button" id="r3" onclick="corroborar('2')" name="respuesta" value="Responder">
+			</form>
+		</section>
+		<section  id="p4">
+			<form action="http://www.gludwebcommunity.me/" method="get">
+				<h3> ¿Cuál es la forma correcta de crear un vínculo?</h3>
+				<input type="radio" name="web" value="incorrecto" >  &lt;a target="http://www.unsitio.com">...&lt;/a&gt;
+				<br/>
+				<input type="radio" name="web" value="correcto">   &lt;a href="http://www.unsitio.com">...&lt;/a&gt;
+				<br/>
+				<input type="radio" name="web" value="Hyper Text Markup Language"> &lt;a  url="http://www.unsitio.com">...&lt;/a&gt;	
+				<br/>
+				<input type="button" id="r4" onclick="corroborar('3')" name="respuesta" value="Responder">
+			</form>
+		</section>
+		<section  id="p5">
+			<form action="http://www.gludwebcommunity.me/" method="get">
+			<h3> el método<input type="text" id="rta5" > me permite ocultar en la url los parámetros enviados de un formulario</h3>	
+			<input type="button" id="r5" onclick="corroborar('4')" name="respuesta" value="Responder">
+			</form>
+		</section>
+		<section  id="p90">
+			Has finalizado pero aún queda mucho por aprender
+			<a href="http://www.gludwebcommunity.me">volver al inicio</a>
+		</section>
+				<footer>
+				GLUD web community
+				</footer>
+</body>
+</html>
