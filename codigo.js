@@ -104,7 +104,7 @@ function corroborar(a) {
 		}
 		if(respuesta1=="correcto"){
 			alert("Bien!!");
-			document.getElementById('p90').style.display = 'block';
+			document.getElementById('p9').style.display = 'block';
 			document.getElementById('p8').style.display = 'none';			
 		}else{
 			alert("respuesta incorrecta");
