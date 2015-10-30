@@ -6,6 +6,7 @@ function corroborar(a) {
 		for(var i=0; i<check.length; i++){
 			if(check[i].checked===true){
 				respuesta1=check[i].value;
+				check[i].checked=false;
 			}
 		}
 		if(respuesta1=="correcto"){
@@ -19,6 +20,7 @@ function corroborar(a) {
 		for(var i=0; i<check.length; i++){
 			if(check[i].checked===true){
 				respuesta1=check[i].value;
+				check[i].checked=false;
 			}
 		}
 		if(respuesta1=="correcto"){
@@ -32,6 +34,7 @@ function corroborar(a) {
 		for(var i=0; i<check.length; i++){
 			if(check[i].checked===true){
 				respuesta1=check[i].value;
+				check[i].checked=false;
 			}
 		}
 		if(respuesta1=="correcto"){
@@ -45,6 +48,7 @@ function corroborar(a) {
 		for(var i=0; i<check.length; i++){
 			if(check[i].checked===true){
 				respuesta1=check[i].value;
+				check[i].checked=false;
 			}
 		}
 		if(respuesta1=="correcto"){
@@ -58,11 +62,52 @@ function corroborar(a) {
 		var ct= document.getElementById('rta5').value;
 		if(ct=="post"){
 			alert("muy bien!!");
-			document.getElementById('p90').style.display = 'block';
+			document.getElementById('p6').style.display = 'block';
 			document.getElementById('p5').style.display = 'none';			
 		}else{
 			alert("respuesta incorrecta");
 		}
+	}else if(respuesta1[a].id=="r6"){
+		for(var i=0; i<check.length; i++){
+			if(check[i].checked===true){
+				respuesta1=check[i].value;
+				check[i].checked=false;
+			}
+		}
+		if(respuesta1=="correcto"){
+			alert("Bien!!");
+			document.getElementById('p7').style.display = 'block';
+			document.getElementById('p6').style.display = 'none';			
+		}else{
+			alert("respuesta incorrecta");
+		}
+	}else if(respuesta1[a].id=="r7"){
+		for(var i=0; i<check.length; i++){
+			if(check[i].checked===true){
+				respuesta1=check[i].value;
+				check[i].checked=false;
+			}
+		}
+		if(respuesta1=="correcto"){
+			alert("Bien!!");
+			document.getElementById('p8').style.display = 'block';
+			document.getElementById('p7').style.display = 'none';			
+		}else{
+			alert("respuesta incorrecta");
+		}
+	}else if(respuesta1[a].id=="r8"){
+		for(var i=0; i<check.length; i++){
+			if(check[i].checked===true){
+				respuesta1=check[i].value;
+				check[i].checked=false;
+			}
+		}
+		if(respuesta1=="correcto"){
+			alert("Bien!!");
+			document.getElementById('p90').style.display = 'block';
+			document.getElementById('p8').style.display = 'none';			
+		}else{
+			alert("respuesta incorrecta");
+		}
 	}
-
 }

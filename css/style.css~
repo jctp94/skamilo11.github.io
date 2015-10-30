@@ -45,7 +45,7 @@ footer{
 	text-align: justify;
 }
 pre{
-	text-align: left;
+	text-align: left;;
 }
 #a1{
 	text-align: left;
