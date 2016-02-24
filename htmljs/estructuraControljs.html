@@ -1,0 +1,170 @@
+<!Doctype hmtl>
+<html>
+    <head>
+        <title>Javascript</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximun-scale=1, minimum-scale=1">
+        <link rel="stylesheet" href="../css/subhtml.css">
+    </head>
+    <body>
+       <div id="wrapper">
+        <div id="logo">
+            <h1>Javascript</h1>
+            <h3>Estructuras de flujo y control</h3>
+        </div>
+        
+        <div id="page">
+        <ul>
+            <li><strong>Estructuras if e if....else</strong></li>
+            <p>Está estructura nos permite restringir una acción dependiendo si una condición se cumple o no.
+            </p>
+            <p>Decimos que una condición se cumple si su valor es true, la estructura es la siguiente:
+            </p>
+            <pre>
+             if(condicion){ 
+                . 
+                acción a realizar 
+                . 
+            }
+            </pre> 
+            <p>
+                Existe una variación, o una función adicional a esta estructura llamada <strong>else</strong> que nos permite realizar una acción cuando la condición inicial no se cumple. Su estructura es así:
+            </p>
+            <pre>
+             if(condicion){
+                . 
+                acción a realizar 
+                . 
+            }else {
+                . 
+                acción a realizar 
+                . 
+            }
+            </pre>
+             
+            <p>Y si comprobamos una condición y si esta es falsa y ademas queremos comprobar otra condición podemos usar la estructura <strong>else if</strong> de esta manera </p>
+            <pre>
+            if(condicion){
+                . 
+                acción a realizar 
+                . 
+            }else if(otraCondicion){
+                . 
+                acción a realizar 
+                . 
+            }else {
+                . 
+                acción a realizar 
+                . 
+            }
+            </pre>
+            <li><strong>Estructura switch case</strong></li>
+            <p>
+            Cuando queremos verificar varias condiciones, y estas solo dependen de una variable podríamos generar una serie de else if para cada caso pero esto es muy engorroso, existe otra estructura llamad <strong>switch case</strong> que nos permite solucionar este problema de una manera mas simple.
+            </p>
+            Funcionan de la siguiente manera:
+            <br>
+            <br>
+            <pre>
+                switch(variable){
+                    case valor1:
+                    
+                    .....código a ejecutar si la variable toma el valor1.....
+                    
+                    break;
+                    
+                    case valor2:
+                    
+                    .....código a ejecutar si la variable toma el valor2.....
+                    
+                    break;
+                    
+                    case valor3:
+                    
+                    .....código a ejecutar si la variable toma el valor3.....
+                    
+                    break;
+                    
+                    case default:
+                    
+                    .....código a ejecutar en caso de que no se cumpla.....
+                    
+                    break;
+                }
+                
+            </pre>
+            <p>Podemos realizar una analogía entre el <strong>else</strong> y el <strong>default</strong> ya que ambos se activan si ninguno de los condiciones o casos se cumplen.</p>
+            <li><strong>Estructura for</strong></li>
+            <p>La estructura for nos permite realizar varias veces una acción hasta que un contador llegue a un valor determinado. Se escribe de la siguiente manera </p>
+            <pre>
+            for(inicializacion; condicion; actualizacion) {
+                .
+                acción a realizar
+                .
+            }   
+            </pre>
+            <p>La inicialización se refiere si bien a declarar la variable con la cual se va a tener control del ciclo, por ejemplo:
+            <br>var i = 0;<br>
+            o a indicar otra variable que haya sido declarada anteriormente
+            </p>
+            <p>
+                la condición controla el ciclo preguntando cada vez que que se va a ejecutar la acción, si aún se cumple dicha condición. Ejemplo:
+                <br>
+                i < 10;
+            </p>
+            <p> Finalmente la actualización cambia el valor de la variable con la que controlamos el ciclo. Ejemplo: <br>
+            i++; <br> i--;<br> i+=5;<br>...</p>
+            De esta manera un ejemplo de un for sería así:
+            <pre>
+            for(var i = 0; i <= 10; i++) {
+                .
+                acción a realizar
+                .
+            } 
+            </pre>
+            <li><strong>Estructura for..in</strong></li>
+            <p>Esta estructura derivada del for nos permite iterar de manera arbitraria de un objeto, En este caso vamos a mirar como funciona para recorrer un arreglo especificamente </p>
+            <pre>
+            var animales=["perro","gato","gallina","culebra","elefante"];
+            
+            for(var i = 0; in animales){
+                console.log(animales[i]);
+            }
+            </pre>
+            EL código anterior nos permitirá recorrer el arreglo e imprimir cada uno de sus elementos.
+            <br>
+            <br>
+            <li><strong>Estructura
+             while</strong></li>
+             <p>
+                 La estructura for nos permite realizar un accion repetitivamente pero siempre debemos decirle cuantas veces queremos que lo haga, entonces para ciertas situaciones esto es un poco rigido. Pero hay otra estructura que nos permite trabajar de una manera un poco mas flexible, el <strong>while</strong> que nos da la ventaja de no saber excatamente cuantas veces queremos que un código se repita, sino que simplemente se sigue repitiendo meintras se cumpla una condición que le demos. Su estructura es así:
+             </p>
+             <pre>
+                 while(condicion){
+                     .
+                     ejecutar acción
+                     .
+                 }
+             </pre>
+                 <p>Donde condicion es la que se debe cumplir para que se siga ejecutando la acción que se encuentra dentro del while</p>
+                 <p>Una Variación de while es el do while que nos permite ejecutar por lo menos una vez la acción y luego de eso preguntar si se cumple la condición para que se vuelva a ejecutar. La estructura es la siguiente:</p>
+                 <pre>
+                 do{
+                     .
+                     ejecutar acción
+                     .
+                 }while(condicion);
+                 </pre>
+                 
+        </ul>
+        </div>
+        A continuación las páginas que nos sirvieron de fuente y donde se puede ampliar, o profundizar lo anteriormente visto.
+        
+        <br><a href="http://cursohacker.es/estructuras-de-control-en-javascript" target="_blank">Estructuras de control1</a>
+        <br><a href="http://www.lewebmonster.com/estructuras-condicionales-en-javascript-if-if-else-if-else-if-y-switch/" target="_blank">Condicionales</a>
+        <br><a href="http://librosweb.es/libro/javascript/capitulo_3/estructuras_de_control_de_flujo.html" target="_blank">Estructuras de control de flujo</a>
+        <br><a href="http://librosweb.es/libro/javascript/capitulo_4/otras_estructuras_de_control.html" target="_blank">Estructuras de control de flujo2</a>
+        <br><a href="http://dis.um.es/~lopezquesada/documentos/IES_1314/IAW/curso/UT7/libroswebjavascript/www.librosweb.es/javascript/capitulo3/estructuras_de_control_de_flujo.html">Estructuras de control de flujo3</a>
+            </div>
+    </body>
+</html>

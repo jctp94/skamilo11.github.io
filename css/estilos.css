@@ -1,0 +1,58 @@
+
+h1{
+    text-align-last: center;
+}
+.supc{
+   display: flex;
+}
+.contenedor{
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    -webkit-perspective: 700;
+}
+
+.carta{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 2s;
+    
+}
+.carta:hover{
+    transform: rotateY(180deg);
+}
+li{    
+    margin: 0;
+    list-style: none;
+    padding: 5px;
+}
+li:hover{
+    cursor: pointer;
+    background: rgba(73,155,234,1);
+}
+.lado {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    
+}
+
+.frente{
+   
+}
+
+.atras{
+    background: #f0f0f0;
+    transform: rotateY(180deg);
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+#logo{
+    width: 80%;
+    height: 80%;
+}

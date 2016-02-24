@@ -1,0 +1,124 @@
+<!Doctype hmtl>
+<html>
+    <head>
+        <title>Javascript </title>
+    </head>
+    <body>
+        <h1>Javascript</h1>
+        <h3>Operadores</h3>
+        <ul>
+            <li><strong>Asignación</strong></li>
+            <br>
+            Este es uno de los más usados y hemos trabajado con el bastante hasta el momento y se utiliza de la siguiente manera
+            <br>
+            var asig,asig2;
+            <br>
+            asig = 12;
+            <br>
+            asig2 = asig;
+            <br>
+            en ambos casos se está haciendo asígnación y el simbolo usado es "="
+            <br><br>
+            <li><strong>Aritmeticos</strong></li>
+            <br>
+            Dentro de este tipo de operadores podemos encontrar tres.
+            <br>
+            Para incremento, se usa del siguiente modo:
+            <br>
+            var a=5;  ("Declaramos la variable")
+            <br>
+            a++;    "Aumentamos en uno su valor con lo que ahora a=6"
+            <br>
+            <br>
+            Para decremento es un proceso similar:
+            <br>
+            var a=5;  ("Declaramos la variable")
+            <br>a--;        
+            <br> "Decrementamos en uno su valor con lo que ahora a=4"
+            <br>
+            <br>
+            Para calcular el residuo de una división se usa %:
+            <br>
+            var a=13;<br>
+            var b=5;<br>
+            var c= a%b; "El valor de c será 3"
+            <br> 
+            <br>
+            <li><strong>Lógicos</strong>
+            </li>
+            <br>
+            <strong>Negación</strong>
+            <br>
+            Es representado con el signo de admiración(!) y devuelve el valor de verdad contrario al de la variable.
+            <br>
+            Ejemplo:
+            <br>
+            var cam= true;
+            <br>
+            var neg= !cam; "En este caso el varo de neg sería false"
+            <br>
+            Lo mismo pasaría al contrario
+            <br>
+            var cam = false;
+            <br>
+            var neg = !cam; "En este caso el valor de neg sería true"
+            <br><br>
+            <strong>AND</strong>
+            <br>
+            Es reprensentado por && y se usa con dos variables o terminos booleanos y devuelve true únicamente si ambos valores son true.
+            <br>
+            Ejemplo:
+            <br>
+            var a = true; <br>
+            var b = true; <br>
+            console.log(a && b); "Esto imprimirá true"
+            <br>
+            var c = false; <br>
+            console.log(c && b) "Esto imprimirá false"<br>
+            <br><br>
+            <strong>OR</strong>
+            <br>
+            Es representado por || y se usa igualmente con dos valores booleanos, devuelve true si alguno de los dos valores son true
+            <br>
+            Ejemplo:
+            <br>
+            var var a = true; <br>
+            var b = false; <br>
+            console.log(a || b); "Esto imprimirá true"
+            <br>
+            var c = false; <br>
+            console.log(c || b) "Esto imprimirá false"
+            <br><br>
+            <li><strong>Matemáticos</strong></li>
+            <br>
+            Dentro de estos están los que se usan normalmente en todos los lenguajes de programación convencionales: "+","-","*","/".
+            <br>
+            Ejemplo:
+            <br>
+            var a= 10;<br>
+            var b= 4;<br>
+            console.log(a+b); "imprimirá 14"<br>
+            console.log(a-b); "imprimirá 6"<br>
+            console.log(a*b); "imprimirá 40"<br>
+            console.log(a/b); "imprimirá 2.5"<br>
+            <br><br>
+            <li><strong>Comparadores</strong></li>
+            <br>
+            Estos operadores comparan dos terminos (númericos, cadena de carácteres Strings, objetos o lógicos) y devuelve un valor lógico.
+            <br>
+            En la siguiente tabla se muestra como funcionan.
+            <img src="imgs/comparar.png" alt="comparadores">
+        </ul>
+        A continuación algunos enlaces que nos han servido como fuentes, y donde se puede amplir la información obtenida.
+        
+        <br>
+        <br>
+        <a href="http://librosweb.es/libro/javascript/capitulo_3/operadores.html" target="_blank">Operadores1</a>
+        <br>
+        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Expressions_and_Operators#Logical_operators" target="_blank">Operadores2</a>
+        <br>
+        <a href="http://www.htmlpoint.com/javascript/corso/js_30.htm" target="_blank">Operadores3</a>
+        <br>
+        <a href="https://www.funcion13.com/por-que-usar-tres-simbolos-de-igual-para-comparar-en-javascript/" target="_blank">Diferencia entre == y ===</a>
+    </body>
+</html>
