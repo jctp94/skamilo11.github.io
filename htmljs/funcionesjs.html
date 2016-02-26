@@ -1,0 +1,69 @@
+<!Doctype hmtl>
+<html>
+    <head>
+        <title>Javascript </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximun-scale=1, minimum-scale=1">
+        <link rel="stylesheet" href="../css/subhtml.css">
+    </head>
+    <body>
+       <div id="wrapper">
+            <div id="logo">
+                <h1>Javascript</h1>
+                <h3>Funciones</h3>
+                
+            </div>
+            <div id="page">
+                <p>
+                    Cuando necesitamos repetir varias veces una instrucción dentro de una aplicación, el código se vuelve difícil de entender e inoficioso ya si queremos cambiar algo dentro de esta instrucción, nos tocaría modificar cada una de las veces que al repetimos. La solución ha dicho problema es una estructura denominada función. Una función es una serie de instrucciones que ejecutan una acción concreta y que puede ser facilmente reutilizada
+                </p>
+                <p>Podemos definir una función de dos formas: declaración y espresión. Adicionalmente cuando la función desea retornar un valor es usada la palabara return para dicho proposito.
+                </p>
+                <pre>
+                   //declaración.
+                    function nombreFuncion(){
+                        .
+                        accion a realizar
+                        .
+                        return algunValor;
+                    }
+                    
+                    //expresión
+                    var nombreFuncion = function(){
+                         .
+                        accion a realizar
+                        .
+                        return algunValor.
+                    }
+                </pre>
+                <p>Hay algunas veces que necesitamos que una función tome datos que le sean pasados por un ente externo. Para cumplir con estos objetivos se utilizan los "parametros", estos son valores que le llegan a una función para que esta pueda realizar alguna acción con estos. No todas las funciones requieren parametros ni necesariamente deben retornar un valor.</p>
+                <pre>
+                    function sumar(x,y){
+                       
+                        return x+y;
+                        
+                    }
+                </pre>
+                <p>Es importante tener en cuenta que si en el ejemplo anterior no tuvieramos parametros no habría manera de sumar dos numeros cualquiera que le pasaramos a la función</p>
+                <p>Para llamar a la función simplemente se debe poner el nombre de esta y entre parentesis los parametros</p>
+                <pre>
+                    var resultado = sumar(4,5);
+                </pre>
+                <p>Es importante recalcar que el númeor de parametros que se deben pasar a una función es el mismo que esta pide, si se le pasan mas o menos a diferencia de otros lenguajes javascript no muestra error por esto.</p>
+                <p>Para Estructurar problemas con un grado de complejidad alto es necesario usar de forma integrda todas las estructuras de control y flujo y demás temas vistos anteriormente junto con las funciones.</p>
+            </div>
+            <div id="footer">
+                <p>
+                    Los siguientes enlaces sirvieron como fuente y además sirven para profundizar la información acerca de las funciones.
+                    <br>
+                    <a href="http://librosweb.es/libro/javascript/capitulo_4/funciones.html" target="_blank">funciones1</a>
+                    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Funciones" target="_blank">funciones2</a>
+                    <a href="http://aprenderaprogramar.com/index.php?option=com_content&view=article&id=800:funciones-javascript-concepto-parametros-argumentos-y-tipos-paso-por-valor-return-ejemplo-cu01122e&catid=78:tutorial-basico-programador-web-javascript-desde-&Itemid=206" target="_blank">funciones3</a>
+                    <a href="http://www.codexexempla.org/curso/curso_4_2_e.php" target="_blank">funciones4</a>
+                    <a href="http://www.w3schools.com/js/js_functions.asp" target="_blank">funciones5</a>
+                    <a href="http://www.etnassoft.com/2011/09/02/funciones-declaradas-vs-funciones-expresadas-en-javascript/" target="_blank">Funciones declaradas vs funciones expresadas</a>
+                </p>
+            </div>
+       </div>
+    </body>
+</html>
