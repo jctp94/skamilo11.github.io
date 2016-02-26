@@ -100,3 +100,25 @@ pre{
 #footer {width:900px;margin:0 auto;padding:0;height:50px;background:url(images/img02.gif) no-repeat left top}
 #footer p {margin:0;padding:20px 0;text-align:center;line-height:normal;color:#fff}
 #footer a {}
+form{
+    padding-left: 250px;
+    padding-top: 20px;
+}
+#button {
+padding-left: 200px;
+ border-radius: 50px;
+ background: #3a7999;
+ color: white;
+ padding: 10px;
+ font-size: 18px;
+ border-radius: 5px;
+ position: relative;
+ box-sizing: border-box;
+ transition: all 500ms ease;
+}
+
+#button:hover {
+ background: rgba(0,0,0,0);
+ color: #3a7999;
+ box-shadow: inset 0 0 0 3px #3a7999;
+}
