@@ -17,12 +17,75 @@
                 <p>
                    Un objeto en javascript así como en muchos lenguajes de programación puede ser comparado con un objeto de la vida real, este tiene ciertas carácteristicas unas funciones que puede realizar. En javascript a este tipo de características de un objeto se les conoce como propiedades
                    <br><br>
-                   Existen dos formas de crear un objeto y de asignarle propiedades al mismo:
-                   <br>
-                   <strong>sadasda</strong>
-                   <h2></h2>
-                   
                 </p>
+                  <p>
+                   Existen varias formas de crear un objeto a continuación veremos algunas:
+                   <br>
+                   <strong>Mediante un constructor</strong>
+                   </p>
+                   <pre>
+                       var vaso= new Object();
+                   </pre>
+                   <p>En este caso para asignarle propiedades al objeto se procede de la siguiente manera</p>
+                   <pre>
+                       vaso.material="vidrio";
+                       vaso.tamano="mediano";
+                   </pre>
+                   <p>Para obtener el valor de una propiedad de un objeto se debe acceder a este de forma similar a como lo hacemos con arrays con arrays</p>     <pre>
+                       var prop = vaso["material"];
+                       var prop2 = vaso["tamano"];
+                   </pre>
+                   <p><strong>Mediante notación literal:</strong></p> 
+                   <pre>
+                       var vaso = {
+                           material: "vidrio",
+                           tamano: "mediano"
+                       }
+                   </pre>
+                   <p><strong>Mediante una función constructora:</strong></p>
+                   <pre>
+                       function Balon(deporte,color){
+                           this.deporte = deporte;
+                           this.color = color;
+                       }       
+                   </pre>
+                   <p>De esta manera si deseamos crear un objeto de tipo Balon lo hacemos así</p>
+                   <pre>
+                       var balonFutbol = new Balon(futbol,negro);
+                   </pre>
+                   <p>
+                       Una característica muy util de trabajar con objetos es que estos integran funciones de manera que un objeto no es solo un conjunto de propiedades sino también de funciones que nos permiten hacer determinadas acciones, las fucniones asociadas a un objeto se les llama metodos.
+                       <br>
+                       Veamos un ejemplo, creando un objeto simple llamado calculadora
+                   </p>
+                   <pre>
+                       function Calculadora(){
+                       suma = function(num1,num2){
+                           return num1+num2;
+                       }
+                       resta = function(num1, num2){
+                           return num1 - num2;
+                       }
+                       multiplicacion = function(num1, num2){
+                           return num1*num2;
+                       }
+                       division = function(num1, num2){
+                           return num1/num2;
+                       }
+                       }
+                       var nuevaCalc = Calc();
+                       console.log(nuevaCalc.sumar(5+2));
+                   </pre>
+                   <p>En este ejemplo vemos como creamos con una función constructor para una calculadora que tiene las operaciones básicas, posteriormente instanciamos un nuevo objeto llamado nuevaCalc de tipo calculadora y usamos uno e los metodos para calcular una suma.</p>
+                   <p>Lo anteriormente visto es un indicio y una introducción hacia el mundo de los objetos en JavaScript, es recomendable seguir investigando y profundizando dicha información</p>
+                   <br><br>    
+                   <p>
+                   A continuación algunos enlaces que nos han servido como fuentes, y donde se puede ampliar la información obtenida.
+                   </p>
+                   <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Introducci%C3%B3n_a_JavaScript_orientado_a_objetos" target="_blank">Objetos js 1</a>
+                   <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Trabajando_con_objectos" target="_blank">Objetos js 2</a>
+                   <a href="http://librosweb.es/libro/ajax/capitulo_3.html" target="_blank">Objetos js 3</a>
+                   <a href="http://lineadecodigo.com/javascript/crear-un-objeto-en-javascript/" target="_blank">Objetos js 4</a>
             </div>
         </div>
     </body>
